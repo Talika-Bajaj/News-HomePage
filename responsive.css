@@ -36,22 +36,22 @@
     .home img {
         height: 300px;
     }
-
-    .one {
-        justify-content: space-between;
-        align-items: center;
-        grid-template-columns: 48% 48%;
-    }
-
+    
     .top-news {
         grid-column: 1 /-1;
         grid-template-columns: 31% 31% 31%;
     }
 }
 
-@media screen and (width> 1250px) {
+@media screen and (width> 1220px) {
     .one {
-        grid-template-columns: 324px 373px;
+        grid-template-columns: 357px 373px;
+        
+            justify-content: space-between;
+            align-items: center;
+            /* grid-template-columns: 48% 48%; */
+        
+        /* grid-template-columns: 324px 373px; */
     }
 
     .news-one small {
