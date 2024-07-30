@@ -162,6 +162,7 @@ main {
     color: var(--Very_dark_blue);
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 15px;
     letter-spacing: 3px;
     padding: 14px 18px;
     width: 210px;
