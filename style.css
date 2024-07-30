@@ -8,12 +8,12 @@
 }
 
 :root {
-
+    
     --Soft_orange: hsl(35, 77%, 62%);
     --Soft_red: hsl(5, 85%, 63%);
 
     /* Neutral */
-
+    
     --Off_white: hsl(36, 100%, 99%);
     --Grayish_blue: hsl(233, 8%, 79%);
     --Dark_grayish_blue: hsl(236, 13%, 42%);
@@ -21,13 +21,14 @@
 }
 
 body {
+    background-color: var(--Off_white);
     position: relative;
 }
 
 header {
-    background-color: #fff;
+    background-color: var(--Off_white);
     width: 90vw;
-    padding: 25px 0;
+    padding: 50px 0 30px;
     margin: auto;
     color: var(--Dark_grayish_blue);
 }
@@ -54,7 +55,7 @@ header {
 .nav-list {
     display: none;
     z-index: 1040;
-    background-color: white;
+    background-color: var(--Off_white);
     /* position: absolute; */
     top: 0;
     right: 0;
@@ -111,18 +112,22 @@ header {
 }
 
 main {
-    /* padding: 20px; */
+    padding-bottom: 50px;
     width: 90vw;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: 'home'
         'news' 'topnews';
-    gap: 50px 25px;
+    gap: 70px 25px;
     margin: auto;
 }
 
 .home {
     grid-area: home;
+}
+
+.home img {
+    width: 100%;
 }
 
 .one {
@@ -133,7 +138,7 @@ main {
 }
 
 .head h1 {
-    font-size: 51px;
+    font-size: 56px;
     line-height: 1;
     font-weight: 800;
 }
@@ -141,7 +146,7 @@ main {
 .info {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 30px;
     justify-content: flex-start;
     align-items: baseline;
 }
@@ -149,8 +154,7 @@ main {
 .info p {
     color: var(--Dark_grayish_blue);
     word-spacing: 2px;
-    font-size: 15px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .read-btn {
@@ -200,12 +204,18 @@ main {
 .news-one p {
     color: white;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.news-one p:hover {
+    color: var(--Soft_orange);
 }
 
 .news-one small {
     line-height: 1.8;
-    /* font-size: 12px; */
+    font-size: 14px;
     font-weight: 400;
     color: var(--Grayish_blue);
     /* width: 258px; */
@@ -221,9 +231,6 @@ hr {
     grid-area: topnews;
 }
 
-.home img {
-    width: 100%;
-}
 
 .top-news {
     display: grid;
@@ -254,8 +261,14 @@ hr {
 }
 
 .data h3 {
-    font-size: 17px;
-    font-weight: 900;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    transition: all 0.3s ease-in;
+}
+
+.data h3:hover {
+    color: var(--Soft_red);
 }
 
 .data p {
